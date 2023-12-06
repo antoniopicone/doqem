@@ -9,7 +9,7 @@ A framework to convert a Docker image in a lightweight QEMU virtual machine runn
 
 ...you name it 🙂
 
-![](https://github.com/antoniopicone/doqem/blob/main/doqem.gif)
+![](https://github.com/antoniopicone/doqem/blob/main/doqem_nginx.gif)
 
 ## Quickstart
 Create an alias to run doqem attached to the Docker context: 
