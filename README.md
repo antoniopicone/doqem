@@ -18,7 +18,7 @@ Create an alias to run doqem attached to the Docker context:
 alias doqem="docker run --rm -v /var/run/docker.sock:/var/run/docker.sock antoniopicone/doqem"
 ```
 
-## Doqem-ify a Docker image and push it to the local registry
+## Doqem-ify a Docker image 
 To create a doqem Docker image, just run `doqem <docker_image>`.
 You can add port and/or volume bindings: let's say, for example, you want to test **nginx** docker image and expose 80 port of nginx to 8080 of docker context: to do that, just build a *Doqem* nginx image adding the port binding to the build command:
 
