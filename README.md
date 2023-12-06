@@ -40,3 +40,7 @@ docker run \
 ```
 
 **Hardware Acceleration is supported**, so, if you have KVM enabled, add `--device /dev/kvm:/dev/kvm` to your docker run command!
+
+## Limitations
+
+Only x86_64 architecture is supported right now, sorry... but ARM support is just around the corner, stay tuned! 
