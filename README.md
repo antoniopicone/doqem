@@ -2,7 +2,7 @@
 
 A framework to convert a Docker image in a lightweight QEMU virtual machine running in a Docker container!
 
-![](https://github.com/antoniopicone/doqem/doqem.gif)
+![](https://github.com/antoniopicone/doqem/blob/main/doqem.gif)
 
 ## Create (or pull) Doqem image
 Doqem is the tool to enclose your target image in an isolated environment.
