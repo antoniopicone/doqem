@@ -2,23 +2,24 @@
 
 A framework to convert a Docker image in a lightweight QEMU virtual machine running in a Docker container!
 
+## Motivation
+- run Docker applications in a really isolated environment
+- simplify migration of Docker images into microVMs
+- test your application against kernel/hw faults with QEMU
+
+...you name it 🙂
+
 ![](https://github.com/antoniopicone/doqem/blob/main/doqem.gif)
 
-## Create (or pull) Doqem image
-Doqem is the tool to enclose your target image in an isolated environment.
-
-You just need to build the tool once ;) 
+## Quickstart
+Create an alias to run doqem attached to the Docker context: 
 
 ```bash
-docker build . -t doqem
-```
-For convenience, you can now create an alias for Doqem:
-```bash
-alias doqem="docker run --rm -v /var/run/docker.sock:/var/run/docker.sock doqem"
+alias doqem="docker run --rm -v /var/run/docker.sock:/var/run/docker.sock antoniopicone/doqem"
 ```
 
 ## Doqem-ify a Docker image and push it to the local registry
-To create a Doqem Docker image, just run `doqem <docker_image>`.
+To create a doqem Docker image, just run `doqem <docker_image>`.
 You can add port and/or volume bindings: let's say, for example, you want to test **nginx** docker image and expose 80 port of nginx to 8080 of docker context: to do that, just build a *Doqem* nginx image adding the port binding to the build command:
 
 ```bash
