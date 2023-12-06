@@ -1,6 +1,6 @@
 # Doqem
 
-A framework to convert a Docker image in a lightweight QEMU virtual machine running in a Docker container!
+Convert a Docker image in a lightweight QEMU virtual machine running in a Docker container!
 
 ## Motivation
 - run Docker applications in a really isolated environment
@@ -15,7 +15,7 @@ A framework to convert a Docker image in a lightweight QEMU virtual machine runn
 Create an alias to run doqem attached to the Docker context: 
 
 ```bash
-alias doqem="docker run --rm -v /var/run/docker.sock:/var/run/docker.sock antoniopicone/doqem"
+alias doqem="docker run -v /var/run/docker.sock:/var/run/docker.sock antoniopicone/doqem"
 ```
 
 ## Doqem-ify a Docker image 
